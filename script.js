@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             nodeElement.classList.add(`class-${className}`);
         }
 
-        nodeElement.style.left = `${x - 50}px`;
-        nodeElement.style.top = `${y - 50}px`;
+        nodeElement.style.left = `${x - 40}px`; // Center for 80px width
+        nodeElement.style.top = `${y - 40}px`; // Center for 80px height
         nodeElement.innerHTML = ''; // No text inside
         treeContainer.appendChild(nodeElement);
         node.element = nodeElement;
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const labelElement = document.createElement('div');
         labelElement.classList.add('node-label');
         labelElement.innerHTML = node.name.replace('<=', '&le;');
-        labelElement.style.left = `${x - 60}px`;
-        labelElement.style.top = `${y + 60}px`;
+        labelElement.style.left = `${x - 45}px`;
+        labelElement.style.top = `${y + 50}px`; // Below the node
         treeContainer.appendChild(labelElement);
 
         if (node.children && node.children.length > 0) {
@@ -140,7 +140,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             
             const predictedClass = currentNode.name.split(': ')[1].toLowerCase();
-            point.classList.add(`class-${predictedClass}`);
+            const actualClass = item.actual_class_name.toLowerCase();
+            point.classList.add(`class-${actualClass}`);
 
             // Add tooltip with player information
             point.title = `Player: ${item.player_name}\nPredicted Position: ${predictedClass.toUpperCase()}\nActual Position: ${item.actual_class_name}\nAge: ${item.features.Age}\nGames: ${item.features.G}\nPoints: ${item.features.PTS}\nAssists: ${item.features.AST}\nRebounds: ${item.features.TRB}`;
