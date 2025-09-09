@@ -1,0 +1,263 @@
+{
+  "name": "TRB <= 7.55",
+  "feature": "TRB",
+  "threshold": 7.55,
+  "children": [
+    {
+      "name": "AST <= 4.15",
+      "feature": "AST",
+      "threshold": 4.15,
+      "children": [
+        {
+          "name": "TRB <= 4.85",
+          "feature": "TRB",
+          "threshold": 4.85,
+          "children": [
+            {
+              "name": "2P% <= 0.39",
+              "feature": "2P%",
+              "threshold": 0.39,
+              "children": [
+                {
+                  "name": "BLK <= 1.0",
+                  "feature": "BLK",
+                  "threshold": 1.0,
+                  "children": [
+                    {
+                      "name": "Class: SF"
+                    },
+                    {
+                      "name": "Class: PF"
+                    }
+                  ]
+                },
+                {
+                  "name": "2P <= 1.45",
+                  "feature": "2P",
+                  "threshold": 1.45,
+                  "children": [
+                    {
+                      "name": "Class: PG"
+                    },
+                    {
+                      "name": "Class: SG"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "STL <= 0.95",
+              "feature": "STL",
+              "threshold": 0.95,
+              "children": [
+                {
+                  "name": "BLK <= 0.1",
+                  "feature": "BLK",
+                  "threshold": 0.1,
+                  "children": [
+                    {
+                      "name": "Class: SF"
+                    },
+                    {
+                      "name": "Class: PF"
+                    }
+                  ]
+                },
+                {
+                  "name": "2PA <= 2.45",
+                  "feature": "2PA",
+                  "threshold": 2.45,
+                  "children": [
+                    {
+                      "name": "Class: PF"
+                    },
+                    {
+                      "name": "Class: SG"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TRB <= 5.85",
+          "feature": "TRB",
+          "threshold": 5.85,
+          "children": [
+            {
+              "name": "STL <= 1.15",
+              "feature": "STL",
+              "threshold": 1.15,
+              "children": [
+                {
+                  "name": "AST <= 5.75",
+                  "feature": "AST",
+                  "threshold": 5.75,
+                  "children": [
+                    {
+                      "name": "Class: SG"
+                    },
+                    {
+                      "name": "Class: PG"
+                    }
+                  ]
+                },
+                {
+                  "name": "FGA <= 9.7",
+                  "feature": "FGA",
+                  "threshold": 9.7,
+                  "children": [
+                    {
+                      "name": "Class: PG"
+                    },
+                    {
+                      "name": "Class: PG"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "2P% <= 0.47",
+              "feature": "2P%",
+              "threshold": 0.47,
+              "children": [
+                {
+                  "name": "Class: PG"
+                },
+                {
+                  "name": "FT% <= 0.82",
+                  "feature": "FT%",
+                  "threshold": 0.82,
+                  "children": [
+                    {
+                      "name": "Class: PF"
+                    },
+                    {
+                      "name": "Class: SF"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3PA <= 2.5",
+      "feature": "3PA",
+      "threshold": 2.5,
+      "children": [
+        {
+          "name": "ORB <= 2.2",
+          "feature": "ORB",
+          "threshold": 2.2,
+          "children": [
+            {
+              "name": "DRB <= 6.45",
+              "feature": "DRB",
+              "threshold": 6.45,
+              "children": [
+                {
+                  "name": "Class: PG"
+                },
+                {
+                  "name": "Class: SF"
+                }
+              ]
+            },
+            {
+              "name": "PTS <= 29.0",
+              "feature": "PTS",
+              "threshold": 29.0,
+              "children": [
+                {
+                  "name": "FG% <= 0.44",
+                  "feature": "FG%",
+                  "threshold": 0.44,
+                  "children": [
+                    {
+                      "name": "Class: PF"
+                    },
+                    {
+                      "name": "Class: C"
+                    }
+                  ]
+                },
+                {
+                  "name": "Class: PF"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BLK <= 0.45",
+          "feature": "BLK",
+          "threshold": 0.45,
+          "children": [
+            {
+              "name": "AST <= 6.85",
+              "feature": "AST",
+              "threshold": 6.85,
+              "children": [
+                {
+                  "name": "TRB <= 8.15",
+                  "feature": "TRB",
+                  "threshold": 8.15,
+                  "children": [
+                    {
+                      "name": "Class: PF"
+                    },
+                    {
+                      "name": "Class: SF"
+                    }
+                  ]
+                },
+                {
+                  "name": "Class: PG"
+                }
+              ]
+            },
+            {
+              "name": "FT <= 1.55",
+              "feature": "FT",
+              "threshold": 1.55,
+              "children": [
+                {
+                  "name": "AST <= 2.0",
+                  "feature": "AST",
+                  "threshold": 2.0,
+                  "children": [
+                    {
+                      "name": "Class: SF"
+                    },
+                    {
+                      "name": "Class: PF"
+                    }
+                  ]
+                },
+                {
+                  "name": "PF <= 2.4",
+                  "feature": "PF",
+                  "threshold": 2.4,
+                  "children": [
+                    {
+                      "name": "Class: PF"
+                    },
+                    {
+                      "name": "Class: C"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
